@@ -321,14 +321,6 @@ void LZ77::UnCompressFile(const std::string& strFilePath)
   
 
 
-  //FILE* ffOut = fopen("5.txt","rb");
-  //std::string filestr ;
-  //std::cout<<filestr<<std::endl;
-  //fread(&filestr,sizeof(filestr),1,ffOut);
-  //std::string str = "4.";
-  //str += filestr;
-  //fclose(ffOut);
-
   FILE* fOut = fopen("4.txt", "wb");
   assert(fOut);
 

@@ -1,0 +1,11 @@
+LDFLAGS=-L /home/xiaolv/project/OJ/src/ctemplate
+DEBUGFLAGS=-g
+BIN=../bin/oj_server
+CC=g++
+
+.PHONY:$(BIN)
+$(BIN):oj_server.cpp 
+		$(CC)$^ -o $@   $(DEBUGFLAGS) $(LDFLAGS) -lctemplate -ljsoncpp -lpthread
+.PHONY:clean 
+clean:
+	rm -f $(BIN)

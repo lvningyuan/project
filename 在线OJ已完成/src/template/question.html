@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title> 在线oj </title>
+  </head>
+  <body>
+    <!--题目信息-->
+      <div>  {{id}}.{{name}} {{star}}</div>
+      <div>  {{desc}} </div>
+      <br>
+      <br>
+      <!--代码框-->
+      <form action="/questions/{{id}}" method ="POST">
+        <textarea name = "name" rows= 30, cols =100>  {{header}}</textarea>
+        <br>
+        <input type="submit" formenctype="application/json" value = "Submit">
+        </form>
+      </div>
+  </body>
+</html>
